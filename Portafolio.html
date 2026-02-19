@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body class="bg-black text-white">
+
+
+    <nav class="flex p-3 bg-gray-800 justify-between items-left">
+
+        <a href="https://github.com/Alekey01" class="text-2xl font-bold text-white"><i class="fa-solid fa-briefcase me-2"></i>Alekey01</a>
+        <div class="items">
+            <i class = "fa-solid fa-flag"></i> Español
+            <i class = "fa-regular fa-flag"></i> Ingles
+        </div>
+        <div class="dark-mode-toggle flex items-left gap-2">
+            <input type="checkbox" id="darkModeToggle" class="hidden">
+            <label for="darkModeToggle" class="cursor-pointer">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+        </div>
+    </nav>
+
+
+<div class="max-w-7xl mx-auto px-5 py-8 flex flex-col md:flex-row gap-8">
+
+    <div class="flex-3 relative bg-gray-900 border border-blue-900 rounded-lg overflow-hidden">
+        <div class="text-center">
+            <span class="text-4xl font-bold text-gray-400">
+                <i class="fa-solid fa-user me-2"></i>
+            </span>
+            <h1 class="text-4xl font-bold text-gray-300">¡Hola, soy Alekey01!</h1>
+            <p class="text-lg text-gray-400 mt-4">Bienvenido a mi portafolio</p>
+            <p class="text-white mt-2">
+                Estudiante de Ingeniería en computación en la facultad de ingeniería de la UASLP.
+            </p>
+            <p class="text-white mt-2">
+                Me gusta programar, la electrónica, aprender nuevas tecnologías y desarrollar proyectos interesantes.
+            </p>
+            
+            <br>
+            <button  onclick="openModal()" class="mt-4 px-4 py-2 bg-green-500 text-white  font-semibold rounded-lg hover:bg-green-600 transition duration-300 shadow-lg">Contactar</button>
+            <button  onclick="window.open('https://github.com/Alekey01')" class="mt-4 px-4 py-2 bg-purple-500 text-white font-semibold rounded-lg hover:bg-purple-600 transition duration-300 shadow-lg">Ir a github</button>
+        </div>
+    </div>
+
+
+    <div class="flex-1 bg-gray-900 border border-blue-900 rounded-lg p-6 text-center">
+        <div class="flex flex-col gap-6">
+            
+            <div>
+                <span class="text-3xl font-bold text-white">+10</span>
+                <p class="text-gray-400">Proyectos completados</p>
+                <i class="fa-solid fa-check text-yellow-500"></i>
+            </div>
+
+            <div>
+                <span class="text-3xl font-bold text-white">5</span>
+                <p class="text-gray-400">Lenguajes de Programación</p>
+                <i class="fa-solid fa-code text-yellow-500"></i>
+            </div>
+
+            <div>
+                <span class="text-3xl font-bold text-white">80%</span>
+                <p class="text-gray-400">Satisfacción del Cliente</p>
+                <i class="fa-solid fa-thumbs-up text-yellow-500"></i>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+    <div class="max-w-7xl mx-auto px-5 py-2 flex flex-col md:flex-row gap-8">
+        
+
+        <div class="flex-3 relative bg-gray-900 border border-blue-900 rounded-lg overflow-hidden">
+
+            
+            <img src="https://www.datocms-assets.com/32427/1705590903-6507.jpg?auto=format&max-w=980" alt="img-robot" class="w-full h-80 object-cover">
+
+        
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
+
+            <div class="absolute top-4 left-4 flex gap-2">
+                <span class="bg-blue-600 text-white text-sm px-3 py-1 rounded-md">
+                    Arduino
+                </span>
+                <span class="bg-purple-600 text-white text-sm px-3 py-1 rounded-md">
+                    C++
+                </span>
+            </div>
+
+            <div class="absolute bottom-4 left-4 right-4">
+                <h2 class="text-2xl font-bold text-white">
+                    Robot minisumo de pelea 
+                </h2>
+                <p class="text-gray-300 mt-2">
+                    Un robot diseñado para competir en la categoría de minisumo, utilizando sensores de distancia y pequeños motores para empujar al oponente fuera del ring.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="flex-1 bg-gray-900 border border-blue-900 rounded-xl p-8">
+
+            <h3 class="text-sm tracking-widest text-gray-400 mb-6">
+                TECNOLOGÍAS
+            </h3>
+
+            <div class="grid grid-cols-3 gap-6 text-center">
+
+                <div class="space-y-2">
+                    <div class="bg-gray-800 border border-gray-700 rounded-lg p-4">
+                        <i class="text-yellow-400 text-2xl fa-duotone fa-solid fa-robot"></i>
+                    </div>
+                    <p class="text-gray-400 text-sm">Arduino</p>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="bg-gray-800 border border-gray-700 rounded-lg p-4">
+                        <i class="fa-brands fa-html5 text-orange-500 text-2xl"></i>
+                    </div>
+                    <p class="text-gray-400 text-sm">HTML</p>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="bg-gray-800 border border-gray-700 rounded-lg p-4">
+                        <i class="fa-solid fa-wind text-cyan-400 text-2xl"></i>
+                    </div>
+                    <p class="text-gray-400 text-sm">Tailwind</p>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="bg-gray-800 border border-gray-700 rounded-lg p-4">
+                        <i class="fa-solid fa-brands fa-js text-blue-400 text-2xl"></i>
+                    </div>
+                    <p class="text-gray-400 text-sm">JavaScript</p>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="bg-gray-800 border border-gray-700 rounded-lg p-4">
+                        <i class="fa-solid fa-database text-green-400 text-2xl"></i>
+                    </div>
+                    <p class="text-gray-400 text-sm">Postgres</p>
+                </div>
+
+                <div class="space-y-2">
+                    <div class="bg-gray-800 border border-gray-700 rounded-lg p-4">
+                        <i class="fa-brands fa-react text-blue-400 text-2xl"></i>
+                    </div>
+                    <p class="text-gray-400 text-sm">React</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-5 py-8 flex flex-col md:flex-row gap-8">   
+
+        <div class="flex-1 bg-gray-900 border border-blue-900 rounded-lg p-4 text-left">
+            <div class="flex flex-col gap-6">
+                
+                <div>
+                    <span class="text-3xl font-bold text-white"> <i class="fa-solid fa-microchip text-blue-500"></i> Redes LoRaWan</span>
+                    <p class="text-gray-400 py-10">Proyecto de investigación sobre redes de baja potencia y largo alcance para aplicaciones de IoT.</p>
+                </div>               
+            </div>
+        </div>
+
+         <div class="flex-1 bg-gray-900 border border-blue-900 rounded-lg p-6 text-left">
+            
+            <div class="flex flex-col gap-6">
+                <div>
+                    <span class="text-3xl font-bold text-white"> <i class="fa-solid fa-building-columns text-blue-500"></i> Control de Correspondencia</span>
+                    <p class="text-gray-400 py-10">Sistema de control de correspondencia para la Universidad Autónoma de San Luis Potosí.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-1 bg-gray-900 border border-blue-900 rounded-lg p-6 text-left">
+            <div class="flex flex-col gap-6">
+                
+                <div>
+                    <span class="text-3xl font-bold text-white"> <i class="fa-solid fa-brands fa-react text-blue-500"></i> Proyectos en React</span>
+                    <p class="text-gray-400 py-10">Desarrollo de proyectos utilizando React y tecnologías relacionadas.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!--
+    <div class="row flex gap-8 items-center">
+        <div class="">
+            <img src="//" alt="Imagen de Proyecto 1" class="w-full h-auto rounded-lg shadow-lg">
+            <span class="text-2xl font-bold text-white-800">Proyecto 1: Gestión de Inventario</span>
+            <span> Tailwind </span>
+            <h3 class="text-xl font-semibold text-white-800 mt-2">Descripción del Proyecto</h3>
+            <p class="text-gray-600 mt-2">Descripción del proyecto</p>
+            <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Ver Proyecto</button>
+            
+            <div>
+                <i class ="fa-solid fa-code"></i>
+                <span class="text-gray-600">HTML, CSS, JavaScript</span>
+            </div>
+
+            <div>
+                <i class ="fa-solid fa-code"></i>
+                <span class="text-gray-600">C++</span>
+            </div>
+            <div>
+                <i class ="fa-solid fa-code"></i>
+                <span class="text-gray-600">Python</span>
+            
+            </div>
+            <div>
+                <i class ="fa-solid fa-code"></i>
+                <span class="text-gray-600">Java</span>
+            </div>
+            <div>
+                <i class ="fa-solid fa-code"></i>
+                <span class="text-gray-600">C#</span>
+            </div>
+        </div>
+    </div>
+
+     
+    <div class = "row">
+        <div>
+            <h2>Proyectos</h2>
+            <p>Estos son algunos de los proyectos en los que he trabajado:</p>
+            <button class="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">Ver Proyectos</button>
+        </div>
+       
+        <div>
+            <h2>Laboratorio</h2>
+            <p>En esta sección encontrarás algunos de mis experimentos y proyectos personales:</p>
+            <button class="mt-4 px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition">Ver Laboratorio</button>
+        </div>
+        
+        <div>
+            <h2>Gestion de proyectos</h2>
+            <p>Utilizo herramientas como notion, jira, meotodologias agiles</p>
+            <button class="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition">Ver Gestion de Proyectos</button>
+        </div>
+    </div>
+
+    -->
+    
+    <div id="modal"
+        class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+
+        <div class="bg-gray-800 border border-gray-700 rounded-lg w-full max-w-lg p-6 relative">
+
+            <button onclick="closeModal()"
+                class="absolute top-3 right-3 text-gray-400 hover:text-white">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h2 class="text-2xl font-bold text-white mb-4">
+                Enviar Correo
+            </h2>
+
+            <form id="formCorreo" class="space-y-4">
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-400 mb-1">Nombre</label>
+                    <input type="text" id="nombre" required
+                        class="w-full px-4 py-2 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-400 mb-1">Correo</label>
+                    <input type="email" id="correo" required
+                        class="w-full px-4 py-2 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-400 mb-1">Asunto</label>
+                    <input type="text" id="asunto" required
+                        class="w-full px-4 py-2 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-400 mb-1">Mensaje</label>
+                    <textarea id="mensaje" required
+                        class="w-full px-4 py-2 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg transition duration-300 shadow-lg">
+                    Enviar
+                </button>
+
+            <div class="mt-6 text-right">
+                <button onclick="closeModal()"
+                    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg">
+                    Cerrar
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+<script>
+function openModal() {
+    const modal = document.getElementById('modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+}
+
+function closeModal() {
+    const modal = document.getElementById('modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+}
+</script>
+
+
+<script>
+$("#formCorreo").submit(function(e) {
+    e.preventDefault();
+ 
+    const correo = $("#correo").val();
+    const mensaje = $("#mensaje").val();
+    const nombre = $("#nombre").val();
+    const asunto = $("#asunto").val();
+ 
+  $.ajax({
+  url: "https://diane-domesticable-eliz.ngrok-free.dev/enviar",
+  method: "POST",              // <- POST
+  contentType: "application/json",
+  data: JSON.stringify({
+    nombre, correo, asunto, mensaje
+  }),
+  success: function (res) {
+    console.log(res);
+  },
+  error: function (xhr) {
+    console.error(xhr.responseText);
+  }
+});
+});
+</script>
+</script>
+
+
+
+
+
+
+</body>
+</html>
