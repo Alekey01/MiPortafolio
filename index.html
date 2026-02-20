@@ -15,15 +15,13 @@
     <nav class="flex p-3 bg-gray-800 justify-between items-left">
 
         <a href="https://github.com/Alekey01" class="text-2xl font-bold text-white"><i class="fa-solid fa-briefcase me-2"></i>Alekey01</a>
-        <div class="items">
-            <i class = "fa-solid fa-flag"></i> Español
-            <i class = "fa-regular fa-flag"></i> Ingles
-        </div>
         <div class="dark-mode-toggle flex items-left gap-2">
             <input type="checkbox" id="darkModeToggle" class="hidden">
             <label for="darkModeToggle" class="cursor-pointer">
-            <i class="fa-solid fa-sun"></i>
+            <i class="fa-regular fa-sun"></i>
             <i class="fa-solid fa-moon"></i>
+            <i class = "fa-solid fa-flag"></i> Español
+            <i class = "fa-regular fa-flag"></i> Ingles
         </div>
     </nav>
 
@@ -338,18 +336,24 @@ $("#formCorreo").submit(function(e) {
     const nombre = $("#nombre").val();
     const asunto = $("#asunto").val();
  
-  $.ajax({
-  url: "https://diane-domesticable-eliz.ngrok-free.dev/enviar",
-  method: "POST",              // <- POST
+ $.ajax({
+  url: "https://diane-domesticable-eliz.ngrok-free.app/enviar",
+  method: "POST",
   contentType: "application/json",
+  headers: {
+    "ngrok-skip-browser-warning": "true"
+  },
   data: JSON.stringify({
     nombre, correo, asunto, mensaje
   }),
   success: function (res) {
     console.log(res);
+    alert("¡Correo enviado exitosamente!");
+    closeModal();
   },
   error: function (xhr) {
     console.error(xhr.responseText);
+    alert("Error al enviar: " + xhr.status);
   }
 });
 });
